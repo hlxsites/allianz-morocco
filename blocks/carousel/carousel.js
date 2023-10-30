@@ -1,38 +1,37 @@
 function nextSlide() {
   const carouselButtons = document.querySelector('.carousel-buttons');
 
-  for( let i = 0; i < carouselButtons.children.length; i++) {
+  for (let i = 0; i < carouselButtons.children.length; i += 1) {
     if (carouselButtons.children[i].classList.contains('selected')) {
-      if( carouselButtons.children[i].nextElementSibling != null) {
+      if (carouselButtons.children[i].nextElementSibling != null) {
         carouselButtons.children[i].nextElementSibling.click();
         return;
-      } else {
-        carouselButtons.children[0].click();
-        return;
       }
+      carouselButtons.children[0].click();
+      return;
     }
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 function prevSlide() {
-  let carouselButtons = document.querySelector('.carousel-buttons');
+  const carouselButtons = document.querySelector('.carousel-buttons');
 
-  for( let i = carouselButtons.children.length-1; i >= 0; i--) {
-    //console.log(i);
+  for (let i = carouselButtons.children.length - 1; i >= 0; i -= 1) {
+    // console.log(i);
     if (carouselButtons.children[i].classList.contains('selected')) {
-      if( i != 0 ) {
+      if (i !== 0) {
         carouselButtons.children[i].previousElementSibling.click();
         return;
-      } else {
-        carouselButtons.children[carouselButtons.children.length-1].click();
-        return;
       }
+      carouselButtons.children[carouselButtons.children.length - 1].click();
+      return;
     }
   }
 }
 
 function start() {
-    setInterval(() => nextSlide(), 5000);
+  setInterval(() => nextSlide(), 5000);
 }
 
 export default function decorate(block) {
