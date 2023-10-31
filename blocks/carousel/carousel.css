@@ -2,6 +2,38 @@ main .carousel-container {
   padding: 0;
 }
 
+.carousel > .btn {
+  font-family: Allianz-Icons,sans-serif;
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  color: #414141;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.btn-prev {
+  top: 50%;
+  left: 1.5%;
+}
+
+.btn-prev::before {
+  content: '\e902';
+}
+
+.btn-next {
+  top: 50%;
+  right: 1.5%;
+}
+
+.btn-next::before {
+  content: '\e903';
+}
+
 main .carousel {
   display: flex;
   scroll-snap-type: x mandatory;
