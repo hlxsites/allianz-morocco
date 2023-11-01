@@ -13,6 +13,13 @@ export default function decorate(block) {
           picWrapper.classList.add('columns-img-col');
         }
       }
+
+      const icon = col.querySelector('h4');
+      if(icon) {
+        icon.classList.add(icon.id);
+        icon.innerHTML = '';
+        icon.innerText = '';
+      }
     });
   });
 }
