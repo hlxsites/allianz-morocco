@@ -15,7 +15,7 @@ export default function decorate(block) {
       }
 
       const icon = col.querySelector('h4');
-      if(icon) {
+      if (icon) {
         icon.classList.add(icon.id);
         icon.innerHTML = '';
         icon.innerText = '';

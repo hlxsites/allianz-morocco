@@ -24,20 +24,20 @@
 }
 
 .columns > div > div > h4 {
-  font-family: 'Allianz-Icons',sans-serif;
+  font-family: Allianz-Icons,sans-serif;
 }
 
-.handshake-icon:before {
+.handshake-icon::before {
   content: '\e9b1';
   font-size: 50px;
 }
 
-.product-people-icon:before {
+.product-people-icon::before {
   content: '\e9b7';
   font-size: 50px;
 }
 
-.product-icon-rocket:before {
+.product-icon-rocket::before {
   content: '\e9c4';
   font-size: 50px;
 }
