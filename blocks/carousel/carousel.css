@@ -154,9 +154,16 @@ main .carousel-buttons button {
   padding: 0;
   margin: 5px;
   border-radius: 5px;
-  background-color: var(--highlight-background-color);
+  border-color: #fff;
+  background-color: transparent;
 }
 
 main .carousel-buttons button.selected {
-  background-color: var(--link-color);
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  main .carousel-controls .btn {
+    display: none;
+  }
 }
