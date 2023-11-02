@@ -1,6 +1,7 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .columns img {
@@ -9,6 +10,36 @@
 
 .columns > div > div {
   order: 1;
+  font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.columns > div > div > strong {
+  font-weight: 700;
+  font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+.columns > div > div > h4 {
+  font-family: Allianz-Icons,sans-serif;
+}
+
+.handshake-icon::before {
+  content: '\e9b1';
+  font-size: 50px;
+}
+
+.product-people-icon::before {
+  content: '\e9b7';
+  font-size: 50px;
+}
+
+.product-icon-rocket::before {
+  content: '\e9c4';
+  font-size: 50px;
 }
 
 .columns > div > .columns-img-col {
