@@ -56,16 +56,21 @@ export default function decorate(block) {
   block.parentElement.append(buttons);
 
   // create controls
+  const controls = document.createElement('div');
+  controls.className = 'carousel-controls';
+
   const btnPrev = document.createElement('button');
   btnPrev.ariaLabel = 'previous';
   btnPrev.classList.add('btn', 'btn-prev');
   btnPrev.addEventListener('click', () => prevSlide());
-  block.appendChild(btnPrev);
+  controls.appendChild(btnPrev);
   const btnNext = document.createElement('button');
   btnNext.ariaLabel = 'next';
   btnNext.classList.add('btn', 'btn-next');
   btnNext.addEventListener('click', () => nextSlide());
-  block.appendChild(btnNext);
+  controls.appendChild(btnNext);
+
+  block.parentElement.appendChild(controls);
 
   start();
 }

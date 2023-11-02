@@ -2,7 +2,17 @@ main .carousel-container {
   padding: 0;
 }
 
-.carousel > .btn {
+main .carousel-wrapper .carousel-controls {
+  text-align: center;
+  margin-top: -300px;
+  position: absolute;
+  display: flex;
+  right: 0;
+  left: 0;
+  justify-content: center;
+}
+
+main .carousel-controls .btn {
   font-family: Allianz-Icons,sans-serif;
   position: absolute;
   z-index: 10;
@@ -16,21 +26,21 @@ main .carousel-container {
   margin: 0;
 }
 
-.btn-prev {
+main .carousel-controls  .btn-prev {
   top: 50%;
   left: 1.5%;
 }
 
-.btn-prev::before {
+main .carousel-controls .btn-prev::before {
   content: '\e902';
 }
 
-.btn-next {
+main .carousel-controls  .btn-next {
   top: 50%;
   right: 1.5%;
 }
 
-.btn-next::before {
+main .carousel-controls  .btn-next::before {
   content: '\e903';
 }
 
@@ -129,7 +139,7 @@ main .carousel-wrapper {
 
 main .carousel-wrapper .carousel-buttons {
   text-align: center;
-  margin-top: 0;
+  margin-top: -50px;
   position: absolute;
   display: flex;
   right: 0;
