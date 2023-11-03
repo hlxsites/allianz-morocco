@@ -82,4 +82,12 @@ export default async function decorate(block) {
   }
 
   buildSocialMediaDivider(block);
+
+  // transform links in contacts to buttons
+  const contacts = document.querySelector('.contact');
+  const buttons = contacts.querySelectorAll('p');
+  buttons.forEach((el) => {
+    el.className = 'button-container';
+    el.firstChild.className = 'button';
+  });
 }
