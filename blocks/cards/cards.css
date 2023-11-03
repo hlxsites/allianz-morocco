@@ -8,8 +8,19 @@
 }
 
 .cards > ul > li {
-  border: 1px solid var(--highlight-background-color);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
+  font-size: 16px;
+}
+
+.cards > ul > li > div > ul,
+.cards > ul > li > div > p {
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 0;
+}
+
+.cards > ul > li > div > ul > li {
+  margin-bottom: -15px;
 }
 
 .cards .cards-card-body {
@@ -28,4 +39,21 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards a:any-link {
+  text-transform: uppercase;
+  color: #006192;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cards a::before {
+  font-family: Allianz-Icons,sans-serif;
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 8px;
+  content: '\e903';
 }
