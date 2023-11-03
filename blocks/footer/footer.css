@@ -48,8 +48,24 @@ footer .info {
   width: 100%;
 }
 
+footer .info > div {
+  align-items: unset;
+}
+
 footer .info p {
   text-align: left;
+}
+
+footer .info p > a {
+  color: #5b5b5b;
+}
+
+footer .info h1 {
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: .2px;
+  font-weight: 600;
 }
 
 footer .columns div > p > a {
@@ -113,4 +129,21 @@ footer .c-icon-linked-in::before {
 footer .c-icon-twitter::before {
   color: rgb(29 161 242);
   content: '\e93a';
+}
+
+footer .footer > div > div > ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+footer .footer > div > div > ul > li {
+  padding-right: 20px;
+  color: #5b5b5b;
+  font-size: 16px;
+}
+
+footer .footer > div > div > ul > li > a {
+  color: #5b5b5b;
+  font-size: 16px;
 }
