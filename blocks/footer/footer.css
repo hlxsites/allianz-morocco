@@ -1,5 +1,4 @@
 footer {
-  padding: 2rem;
   background-color: #fff;
   font-size: var(--body-font-size-s);
   text-align: center;
@@ -10,7 +9,6 @@ footer h1 {
 }
 
 footer .footer {
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -19,6 +17,7 @@ footer .footer p {
 }
 
 footer .columns {
+  padding: 0 50px;
   text-align: center;
   background-color: #fff;
 }
@@ -76,6 +75,7 @@ footer .c-social-divider {
   display: flex;
   align-items: center;
   text-align: center;
+  padding: 0 50px;
 }
 
 footer .c-social-divider-wrapper {
@@ -132,9 +132,9 @@ footer .c-icon-twitter::before {
 }
 
 footer .footer > div > div > ul {
+  padding: 0 50px;
   list-style-type: none;
   display: flex;
-  padding: 0;
 }
 
 footer .footer > div > div > ul > li {
