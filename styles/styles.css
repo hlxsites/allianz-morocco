@@ -91,7 +91,13 @@ h4, h5, h6 {
 
 h1 { font-size: var(--heading-font-size-xl) }
 h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
+
+h3 { 
+  font-size: var(--heading-font-size-m);
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  text-align: left; 
+}
 
 h4 {
   font-size: var(--heading-font-size-s);
